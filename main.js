@@ -3,7 +3,7 @@ let xAttempts = 1;
 
 
 
-function handleClick (event) {
+function handleClick(event) {
   event.preventDefault()
 
   const inputNumber = document.querySelector("#inputNumber")
@@ -11,9 +11,7 @@ function handleClick (event) {
   if (Number(inputNumber.value) == randomNumber) {
     document.querySelector(".screen1").classList.add("hide")
     document.querySelector(".screen2").classList.remove("hide")
-    console.log(`acertou em ${+xAttempts} tentativas`)
-    
-
+  
     document.
       querySelector(".screen h2")
       .innerText = `acertou em ${xAttempts} tentativas`
